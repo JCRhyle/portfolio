@@ -14,6 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
   title: `${settings.personal.name} - ${settings.personal.title}`,
   description: settings.seo.siteDescription,
   keywords: settings.seo.keywords,

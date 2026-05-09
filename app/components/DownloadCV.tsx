@@ -9,7 +9,7 @@ export default function DownloadCV() {
     const cvUrl = settings.files.cv;
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'Rui_Jin_Resume.docx';
+    link.download = 'ConstantinoJemelito_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
