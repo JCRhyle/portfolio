@@ -45,7 +45,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: [0.6, -0.05, 0.01, 0.99] }}
           className="mb-8"
         >
-          <div className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none max-w-full overflow-hidden">
+          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none max-w-full overflow-hidden">
             {name.split('').map((char: string, i: number) => (
               <motion.span
                 key={i}
