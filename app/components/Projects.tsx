@@ -12,7 +12,7 @@ interface Project {
   longDescription?: string;
   tech: string[];
   link?: string | null;
-  github: string;
+  github: string | null;
   featured?: boolean;
   features?: string[];
   metrics?: Record<string, string | number>;
@@ -112,7 +112,7 @@ export default function Projects() {
                   </a>
                 )}
                 <a
-                  href={project.github}
+                  href={project.github ?? undefined}
                   className="flex items-center gap-2 text-accent hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"

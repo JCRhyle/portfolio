@@ -10,7 +10,7 @@ interface Project {
   longDescription?: string;
   tech: string[];
   link?: string | null;
-  github: string;
+  github: string | null;
   featured?: boolean;
   features?: string[];
   metrics?: Record<string, string | number>;
@@ -142,7 +142,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
                       </a>
                     )}
                     <a
-                      href={project.github}
+                      href={project.github ?? undefined}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300"

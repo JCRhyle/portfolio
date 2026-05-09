@@ -108,7 +108,7 @@ export default function Contact() {
               {socials.map((social) => (
                 <motion.a
                   key={social.label}
-                  href={social.link}
+                  href={social.link ?? undefined}
                   variants={itemVariants}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
